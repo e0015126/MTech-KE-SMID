@@ -1,5 +1,4 @@
 # Ignore everything in this directory
 *
-config.py
 # Except this file
 !.gitignore
