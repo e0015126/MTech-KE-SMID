@@ -30,7 +30,7 @@ path_ERP = 'ltaodataservice/ERPRates'
 
 count = 12
 
-while (datetime.now().month < 11 and datetime.now().day > 1 and datatime.now().day < 5):
+while (datetime.now().month < 11 and datetime.now().day > 1 and datetime.now().day < 5):
     
     
     # collect Traffic Speed Band data
