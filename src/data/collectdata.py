@@ -89,5 +89,5 @@ while (datetime.now().month < 11 and datetime.now().day > 1 and datatime.now().d
 
     # wait 5 minutes
     time.sleep(300)
-    
+    print datetime    
     count += 1
