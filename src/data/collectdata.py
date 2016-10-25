@@ -87,5 +87,5 @@ while (((datetime.now().month == 10) and (datetime.now().day > 24)) or ((datetim
 
     # wait 5 minutes
     time.sleep(300)
-    print datetime    
+    print datetime.now()    
     count += 1
