@@ -32,7 +32,7 @@ count = 12
 
 while (((datetime.now().month == 10) and (datetime.now().day > 24)) or ((datetime.now().month == 11) and (datetime.now().day < 5))):
     # collect Traffic Speed Band data
-    with open('TSB.txt', 'w') as outfile:
+    with open('../../data/raw/TSB.txt', 'w') as outfile:
         try:
             r = requests.get(uri + path_TSB, headers=headers)
             data = json.loads(r.text)
@@ -43,7 +43,7 @@ while (((datetime.now().month == 10) and (datetime.now().day > 24)) or ((datetim
             pass
     
     # collect Traffic Incidents data    
-    with open('TI.txt', 'w') as outfile:
+    with open('../../data/raw/TI.txt', 'w') as outfile:
         try:
             r = requests.get(uri + path_TI, headers=headers)
             data = json.loads(r.text)
@@ -53,7 +53,7 @@ while (((datetime.now().month == 10) and (datetime.now().day > 24)) or ((datetim
         except:
             pass
     # collect Faulty Traffic Light data    
-    with open('FTL.txt', 'w') as outfile:
+    with open('../../data/raw/FTL.txt', 'w') as outfile:
         try:
             r = requests.get(uri + path_TI, headers=headers)
             data = json.loads(r.text)
@@ -64,7 +64,7 @@ while (((datetime.now().month == 10) and (datetime.now().day > 24)) or ((datetim
             pass
     
     # collect ERP Rates Data
-    with open('ERP.txt', 'w') as outfile:
+    with open('../../data/raw/ERP.txt', 'w') as outfile:
         try:
             r = requests.get(uri + path_TI, headers=headers)
             data = json.loads(r.text)
@@ -87,5 +87,5 @@ while (((datetime.now().month == 10) and (datetime.now().day > 24)) or ((datetim
 
     # wait 5 minutes
     time.sleep(300)
-    print datetime.now()    
+    #print datetime.now()    
     count += 1
