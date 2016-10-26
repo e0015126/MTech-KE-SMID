@@ -3,6 +3,7 @@
 Created on Tue Oct 25 19:37:43 2016
 
 @author: vleung
+Python version: 2.7
 """
 
 import requests
